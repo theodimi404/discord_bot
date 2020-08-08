@@ -63,7 +63,7 @@ async def on_reaction_add(reaction, user):
     await reaction.message.add_reaction(response)
 
 
-@bot.event  # Functions which are derived through messages in the text server
+@bot.event  # Functions which are using messages on the text server
 async def on_message(message):
     # creates teams for a certain game. Change the variable to customize the command
     game = 'tichu'
